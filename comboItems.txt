@@ -1,0 +1,8 @@
+113 944 Burger & Fries Combo
+114 1023 Pizza & Wings Combo
+115 999 Fish & Chips Combo
+116 1034 Nuggets & Pizza Combo
+117 500 Hot Dog & Fries Combo
+118 699  Wrap & Drink Combo
+119 1099 Toast & Juice Combo
+120 599 Pancakes & Bacon Combo

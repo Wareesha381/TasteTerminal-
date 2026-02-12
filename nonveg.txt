@@ -1,0 +1,7 @@
+106 250 Chicken Wings
+107 300 Mutton Curry
+108 200 Grilled Fish
+109 180 Chicken Biryani
+110 220 Prawn Fry
+111 350 Lamb Chops
+112 150 Egg Curry

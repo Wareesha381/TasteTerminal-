@@ -1,0 +1,5 @@
+101 590 Veg Burger
+102 690 Veg Pizza
+103 800 Caesar Salad
+104 230 French Fries
+105 790 Paneer Tikka
