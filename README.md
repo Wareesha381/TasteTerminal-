@@ -1,16 +1,6 @@
-Based on the code and file structure you provided from your repository, here is a professional README.md file tailored specifically for your project.
+Here is the complete, formatted README.md file. It combines the visual appeal of the previous format with the specific technical details from your code.
 
-Since your repository is named TasteTerminal but the internal code refers to FoodCort, I have combined them to make it look professional.
-
-Instructions:
-
-Copy the code block below.
-
-Go to your GitHub repository (TasteTerminal-).
-
-Click on the pencil icon ✏️ on your existing README.md file.
-
-Paste this content in and commit changes.
+You can copy the code block below directly into your repository's README.md file without needing to edit anything.
 
 code
 Markdown
@@ -32,42 +22,42 @@ Built as a 3rd-semester final project, this system mimics a real-world backend f
 ## ✨ Key Features
 The application features a secure entry system and a dynamic dashboard with **10 core functionalities**:
 
-### 🔐 User Management
-*   **Sign Up:** Registers new users and saves credentials (`users.txt`, `userkey.txt`).
+### 🔐 User Management & Security
+*   **Sign Up:** Registers new users and securely saves credentials to `users.txt` and `userkey.txt`.
 *   **Sign In:** Validates credentials against stored records.
-*   **Customer Details:** Admin view to retrieve address and contact info (`usercontactInfo.txt`, `address.txt`).
+*   **Customer Details:** Admin view to retrieve address and contact info from `usercontactInfo.txt` and `address.txt`.
 
 ### 🍽️ Dynamic Menu System
-*   **Vegetarian Menu:** Reads items from `Veg.txt`.
-*   **Non-Vegetarian Menu:** Reads items from `nonveg.txt`.
-*   **Combo Deals:** Reads bundles from `comboItems.txt`.
-*   **Full Menu Display:** Aggregates all categories.
+*   **🥗 Vegetarian Dishes:** Loads filtered items from `Veg.txt`.
+*   **🍗 Non-Vegetarian Dishes:** Loads filtered items from `nonveg.txt`.
+*   **🍱 Combo Deals:** Special bundles loaded from `comboItems.txt`.
+*   **📜 Show Full Menu:** Aggregates and displays all available items at once.
 
-### 🛒 Order Processing
-*   **Add to Cart:** Users can search items by name; the system retrieves IDs and prices automatically.
-*   **Remove Item:** Remove specific items from the current order by ID.
-*   **View Order:** Live updates of the current bill.
-*   **Checkout & Payment:** Calculates total and processes payment (simulated).
-*   **Rating System:** Allows users to leave feedback (`Review` class).
+### 🛒 Advanced Cart & Checkout
+*   **Add Item to Order:** Users search by name; the system uses file streaming to find the ID and Price automatically.
+*   **Remove Item:** Users can delete specific items from their active cart using the Item ID.
+*   **View Current Order:** Real-time display of selected items and running total.
+*   **Checkout & Pay:** Calculates the final bill and processes a simulated payment.
+*   **Rating System:** Allows users to leave feedback (1-5 stars) and comments.
 
 ## 🛠️ Technical Implementation
-This project relies heavily on advanced C++ concepts:
+This project demonstrates proficiency in advanced C++ concepts:
 
 1.  **Object-Oriented Programming (OOP):**
-    *   **Inheritance:** `Customer` inherits from `Signin`; `Vegetarion` inherits from `Menu`.
-    *   **Polymorphism & Encapsulation:** Used to protect user data (Passwords/Keys).
+    *   **Inheritance:** `Customer` inherits from `Signin`; `Vegetarion` and `Non_Vegetarion` inherit from `Menu`.
+    *   **Polymorphism & Encapsulation:** Used to protect sensitive data like Passwords.
 2.  **File Handling (Database):**
-    *   Uses `fstream` (ifstream/ofstream) to manage 7+ text files for data persistence.
+    *   Uses `fstream` (ifstream/ofstream) to read/write to **7 different text files** for data persistence.
 3.  **Dynamic Memory Allocation:**
     *   Utilizes pointers (e.g., `int* ids`) to manage item IDs efficiently during runtime.
 4.  **Operator Overloading:**
-    *   Implemented in the `Order` class (e.g., `currentOrder + selectedItem`) to add items seamlessly.
+    *   Implemented in the `Order` class (e.g., `currentOrder + selectedItem`) to add items to the cart seamlessly.
 
 ## 📂 File Structure
 ```text
 TasteTerminal/
-├── Source.cpp           # Main entry point and menu loop
-├── Foodcort.cpp         # Implementation of class functions
+├── Source.cpp           # Main entry point containing the 10-option Menu Loop
+├── Foodcort.cpp         # Implementation of class functions (Logic Layer)
 ├── Foodcort.h           # Header file (Class definitions)
 ├── users.txt            # Database: Usernames
 ├── userkey.txt          # Database: Passwords
@@ -102,6 +92,10 @@ If the program cannot find the files, the menu will appear empty.
 Build and Run:
 
 Press Ctrl + F5 to compile and run.
+
+📸 Screenshots
+
+(Add your screenshots here by dragging and dropping them into the GitHub editor)
 
 👥 Contributors
 
