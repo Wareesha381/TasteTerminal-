@@ -1,12 +1,4 @@
-Here is the complete, formatted README.md file. It combines the visual appeal of the previous format with the specific technical details from your code.
 
-You can copy the code block below directly into your repository's README.md file without needing to edit anything.
-
-code
-Markdown
-download
-content_copy
-expand_less
 # 🍔 TasteTerminal (FoodCort)
 
 ![C++](https://img.shields.io/badge/Language-C++-blue.svg?style=for-the-badge&logo=c%2B%2B)
