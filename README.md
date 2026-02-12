@@ -47,7 +47,7 @@ This project demonstrates proficiency in the following C++ concepts:
 *   `menu.txt` - Stores food items and prices.
 
 ## 👥 Contributors
-*   **[Your Name]** - *Backend Logic & File Handling*
+*   **Wareesha** - *Backend Logic & File Handling*
 *   **Eman Amin** - *OOP Structure & Menu Implementation*
 
 ## 📜 License
