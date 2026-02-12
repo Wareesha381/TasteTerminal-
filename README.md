@@ -1,54 +1,122 @@
-# 🍔 FoodCort - Console Food Ordering System
+Based on the code and file structure you provided from your repository, here is a professional README.md file tailored specifically for your project.
 
-![C++](https://img.shields.io/badge/Language-C++-blue.svg)
-![IDE](https://img.shields.io/badge/IDE-Visual%20Studio-purple.svg)
-![Concepts](https://img.shields.io/badge/Concepts-OOP%20%7C%20File%20Handling-green.svg)
+Since your repository is named TasteTerminal but the internal code refers to FoodCort, I have combined them to make it look professional.
+
+Instructions:
+
+Copy the code block below.
+
+Go to your GitHub repository (TasteTerminal-).
+
+Click on the pencil icon ✏️ on your existing README.md file.
+
+Paste this content in and commit changes.
+
+code
+Markdown
+download
+content_copy
+expand_less
+# 🍔 TasteTerminal (FoodCort)
+
+![C++](https://img.shields.io/badge/Language-C++-blue.svg?style=for-the-badge&logo=c%2B%2B)
+![IDE](https://img.shields.io/badge/IDE-Visual%20Studio-purple.svg?style=for-the-badge&logo=visual-studio)
+![Concepts](https://img.shields.io/badge/Concepts-OOP%20%7C%20File%20Handling-green.svg?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
 ## 📄 Project Overview
-**FoodCort** is a fully functional console-based application designed to simulate a real-world food ordering experience. Built as a 3rd-semester final project, this system leverages **Object-Oriented Programming (OOP)** principles to manage user data, menus, and orders efficiently.
+**TasteTerminal** (internally titled *FoodCort*) is a comprehensive **Console-Based Food Ordering Application** developed in C++. 
 
-It features a robust **File Handling system** that acts as a database, ensuring that user credentials, order history, and ratings are saved permanently even after the program closes.
+Built as a 3rd-semester final project, this system mimics a real-world backend for a food delivery service. It moves beyond simple logic by implementing a **persistent database system** using text files, ensuring that User Credentials, Order History, and Reviews are saved permanently.
 
 ## ✨ Key Features
-The application includes a secure **Login/Sign-Up System** followed by a dynamic main menu with **10 functional options**:
+The application features a secure entry system and a dynamic dashboard with **10 core functionalities**:
 
-*   **🔐 Authentication:** Secure Sign-Up & Login (Data saved in `.txt` files).
-*   **🥗 Vegetarian & Non-Veg Menus:** Filtered display of dishes.
-*   **🍱 Combo Meals:** Special bundled offers.
-*   **📜 Full Menu Display:** View all available items at once.
-*   **🛒 Cart Management:**
-    *   Add Items to Order.
-    *   Remove Items from Order.
-    *   View Current Order.
-*   **💳 Checkout System:** Calculates total bill with an integrated Rating system.
-*   **🔄 Navigation:** easy exit and return to the main Splash Screen.
+### 🔐 User Management
+*   **Sign Up:** Registers new users and saves credentials (`users.txt`, `userkey.txt`).
+*   **Sign In:** Validates credentials against stored records.
+*   **Customer Details:** Admin view to retrieve address and contact info (`usercontactInfo.txt`, `address.txt`).
 
-## 🛠️ Technical Concepts Used
-This project demonstrates proficiency in the following C++ concepts:
-1.  **Object-Oriented Programming (OOP):** Usage of Classes, Objects, Inheritance, and Encapsulation.
-2.  **File Handling:** Using `fstream` to read/write User Data and Menu details to text files.
-3.  **Dynamic Memory Allocation:** Efficiently managing memory using pointers.
-4.  **Data Structures:** Organizing menu items and cart data.
+### 🍽️ Dynamic Menu System
+*   **Vegetarian Menu:** Reads items from `Veg.txt`.
+*   **Non-Vegetarian Menu:** Reads items from `nonveg.txt`.
+*   **Combo Deals:** Reads bundles from `comboItems.txt`.
+*   **Full Menu Display:** Aggregates all categories.
 
-## 🚀 How to Run
-1.  Clone this repository:
-    ```bash
-    git clone https://github.com/your-username/FoodCort.git
-    ```
-2.  Open the project in **Microsoft Visual Studio**.
-3.  Ensure the `.txt` files (database files) are in the same directory as the source code (or the debug folder).
-4.  Build and Run (`Ctrl + F5`).
+### 🛒 Order Processing
+*   **Add to Cart:** Users can search items by name; the system retrieves IDs and prices automatically.
+*   **Remove Item:** Remove specific items from the current order by ID.
+*   **View Order:** Live updates of the current bill.
+*   **Checkout & Payment:** Calculates total and processes payment (simulated).
+*   **Rating System:** Allows users to leave feedback (`Review` class).
+
+## 🛠️ Technical Implementation
+This project relies heavily on advanced C++ concepts:
+
+1.  **Object-Oriented Programming (OOP):**
+    *   **Inheritance:** `Customer` inherits from `Signin`; `Vegetarion` inherits from `Menu`.
+    *   **Polymorphism & Encapsulation:** Used to protect user data (Passwords/Keys).
+2.  **File Handling (Database):**
+    *   Uses `fstream` (ifstream/ofstream) to manage 7+ text files for data persistence.
+3.  **Dynamic Memory Allocation:**
+    *   Utilizes pointers (e.g., `int* ids`) to manage item IDs efficiently during runtime.
+4.  **Operator Overloading:**
+    *   Implemented in the `Order` class (e.g., `currentOrder + selectedItem`) to add items seamlessly.
 
 ## 📂 File Structure
-*   `main.cpp` - The entry point of the application.
-*   `header.h` - Class declarations and prototypes.
-*   `functions.cpp` - Implementation of logic.
-*   `users.txt` - Stores registered user credentials.
-*   `menu.txt` - Stores food items and prices.
+```text
+TasteTerminal/
+├── Source.cpp           # Main entry point and menu loop
+├── Foodcort.cpp         # Implementation of class functions
+├── Foodcort.h           # Header file (Class definitions)
+├── users.txt            # Database: Usernames
+├── userkey.txt          # Database: Passwords
+├── usercontactInfo.txt  # Database: Phone numbers
+├── address.txt          # Database: Physical addresses
+├── Veg.txt              # Menu Data: Veg items
+├── nonveg.txt           # Menu Data: Non-Veg items
+├── comboItems.txt       # Menu Data: Combo deals
+├── LICENSE              # MIT License
+└── README.md            # Project Documentation
+🚀 How to Run
 
-## 👥 Contributors
-*   **Wareesha** - *Backend Logic & File Handling*
-*   **Eman Amin** - *OOP Structure & Menu Implementation*
+Clone the Repository:
 
-## 📜 License
-This project is for educational purposes as part of the Computer Science curriculum.
+code
+Bash
+download
+content_copy
+expand_less
+git clone https://github.com/Wareesha381/TasteTerminal-.git
+
+Open in Visual Studio:
+
+Open the .sln file or Import the source files.
+
+⚠️ Critical Step:
+
+Ensure all .txt files (Veg.txt, users.txt, etc.) are in the same directory as your source code (Source.cpp) or the compiled executable.
+
+If the program cannot find the files, the menu will appear empty.
+
+Build and Run:
+
+Press Ctrl + F5 to compile and run.
+
+👥 Contributors
+
+This project was a collaborative effort:
+
+Wareesha Rehman - Backend Logic, File Handling, and Authentication System.
+
+Eman Amin - OOP Structure, Menu Class Implementation, and UI Logic.
+
+📜 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+code
+Code
+download
+content_copy
+expand_less
